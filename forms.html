@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+       @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+      
+      body{
+        background: url(backgroundimage.jpg);
+        width: 100%;
+        height: 100%;
+      }
+       .container{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        padding: 20px;
+        width: 350px;
+        padding-left: -15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+        background: linear-gradient(180deg, rgb(46, 46, 155), rgb(13, 22, 90));
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px black;
+      }
+      .details h3{
+        text-align: center;
+        font-size: 2rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 400;
+      }
+
+      .container input{
+        width: 250px;
+        border-radius: 5px;
+        height: 30px;
+      }
+
+      a{
+        color: rgb(0, 163, 251);
+      }
+
+      .container button{
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        width: 100%;
+        font-size: x-large;
+        cursor: pointer;
+        color: blue;
+        font-weight: 300;
+        font-family: monospace;
+        align-items: center;
+        height: 30px;
+      }
+      section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      section button a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+      section button{
+        border-radius: 4px;
+        height: 30px;
+        padding: 4px;
+        background-color: rgb(54, 68, 220);
+      }
+    </style>
+</head>
+<body>
+  <section>
+    <button><a href="index.html">Home</a></button>
+    <button><a href="layout.html">basicWebpage</a></button>
+    <button><a href="forms.html">Layout</a></button>
+  </section>
+  <div class="container">
+    <div class="details">
+      <h3>Login In</h3>
+      <span class="fa fa-user"></span>
+      <input type="text" required placeholder="First Name">
+      <br>
+      <br>
+      <span class="fa fa-user"></span>
+      <input type="text" required placeholder="Last Name">
+      <br>
+      <br>
+      <span class="fas fa-envelope"></span>
+      <input type="email" class="email-input" required placeholder="Email">
+      <br>
+      <br>
+      <span class="fa fa-lock"></span>
+      <input type="password" class="password-input" placeholder="Password" required>
+      <br>
+      <p><a href="#" id="forgot-password">Forgot Password?</a></p>
+      <button>SignIn</button>
+      <br>
+      <p style="font-size: medium;">Don't have an Account? <a href="#">SignUp</a> now..</p>
+    </div>
+  </div>
+</body>
+</html>
